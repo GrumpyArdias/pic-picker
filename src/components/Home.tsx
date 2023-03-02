@@ -1,10 +1,11 @@
 import SearchBar from "./SearchBar";
-import { Grid } from "@mui/material";
+import CardsGrid from "./CardsGrid";
+
 function Home() {
   return (
     <>
-      <Grid container></Grid>
       <SearchBar />
+      <CardsGrid />
     </>
   );
 }

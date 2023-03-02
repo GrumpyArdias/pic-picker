@@ -5,11 +5,11 @@ function SearchBar() {
   return (
     <>
       <Grid container alignContent="center" justifyContent="center">
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <TextField
             sx={{ marginTop: "10vh", marginBottom: "10vh" }}
             id="search-bar"
-            label="Search for amazing photos!"
+            label="The amazing awaits!"
             variant="outlined"
             fullWidth
             InputProps={{
