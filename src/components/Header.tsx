@@ -1,10 +1,6 @@
-import React from "react";
-import { ReactDOM } from "react";
 import logo from "../img/logo.jpg";
-import likePhotos from "../img/like.png";
 import { AppBar, Box, CssBaseline, Toolbar } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import { bgcolor, border, width, height, display } from "@mui/system";
 
 function Header() {
   return (
@@ -12,16 +8,23 @@ function Header() {
       <CssBaseline />
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-          <img src={logo} style={{ maxWidth: "50px" }} alt="logo img" />
+          <img
+            src={logo}
+            style={{ maxWidth: "50px", marginBottom: "2vh", marginTop: "1vh" }}
+            alt="logo img"
+          />
           <Box
             sx={{
               bgcolor: "#4371B5",
               borderRadius: "50%",
-              width: 30,
-              height: 30,
+              width: 50,
+              height: 50,
             }}
           >
-            <FavoriteIcon></FavoriteIcon>
+            <FavoriteIcon
+              fontSize="large"
+              style={{ margin: "7px" }}
+            ></FavoriteIcon>
           </Box>
         </Toolbar>
       </AppBar>
