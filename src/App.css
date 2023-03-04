@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.inputRounded .MuiOutlinedInput-root {
+  border-radius: 30px;
+}
+.css-idsyub-MuiFormControl-root-MuiTextField-root {
+  border-radius: 30px;
+}

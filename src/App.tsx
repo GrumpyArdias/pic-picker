@@ -8,7 +8,7 @@ import Favorite from "./components/Favorite";
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundColor: "rgba(56, 57, 60, 0.05)" }}>
       <Header />
       <Router>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </div>
   );
 }
 

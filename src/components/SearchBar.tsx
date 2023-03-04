@@ -7,7 +7,12 @@ function SearchBar() {
       <Grid container alignContent="center" justifyContent="center">
         <Grid item xs={6}>
           <TextField
-            sx={{ marginTop: "10vh", marginBottom: "10vh" }}
+            className="inputRounded"
+            sx={{
+              marginTop: "10vh",
+              marginBottom: "10vh",
+              backgroundColor: "white",
+            }}
             id="search-bar"
             label="The amazing awaits!"
             variant="outlined"
