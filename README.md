@@ -1,6 +1,6 @@
 # TO DO
 - [V] Save edit description
-- [X] Fixed footer
-- [X] To the top button
-- [X] Round seachbar
+- [V] Fixed footer
+- [V] To the top button
+- [X] Round seachbar (not gonna do it, for cosmetic reasons)
 - [V] Filter dropdown
