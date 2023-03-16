@@ -8,13 +8,15 @@ import Favorite from "./components/Favorite";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "rgba(56, 57, 60, 0.05)" }}>
+    <div id="root">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/favorites" element={<Favorite />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/favorites" element={<Favorite />} />
+          </Routes>
+        </main>
         <Footer />
       </Router>
     </div>

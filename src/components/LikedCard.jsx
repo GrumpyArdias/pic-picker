@@ -96,17 +96,17 @@ function LikedCard({ data }) {
                     whiteSpace: "nowrap",
                   }}
                 />
-                <EditIcon
+                <SaveIcon
                   onClick={() => handleOpen(true)}
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", color: "#4371B5" }}
                 />
               </>
             ) : (
               <>
                 {description}
-                <SaveIcon
+                <EditIcon
                   onClick={() => handleOpen(true)}
-                  style={{ cursor: "pointer", color: "#4371B5" }}
+                  style={{ cursor: "pointer" }}
                 />
               </>
             )}

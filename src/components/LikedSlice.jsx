@@ -35,6 +35,15 @@ const LikedSlice = createSlice({
       }
 
       localStorage.setItem("LikedItem", JSON.stringify(state.list));
+
+      if (state.isFiltering) {
+        const keyword = state.filterKeyword.trim().toLowerCase();
+        state.list = state.list.filter(
+          (item) =>
+            item.description?.toLowerCase().includes(keyword) ||
+            item.alt_description?.toLowerCase().includes(keyword)
+        );
+      }
     },
 
     picDescriptionEdit: (state, action) => {

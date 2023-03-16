@@ -1,4 +1,5 @@
-import logo from "../img/logo.jpg";
+import { Link } from "react-router-dom";
+import { Typography } from "@mui/material";
 import { AppBar, Box, CssBaseline, Toolbar } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -10,11 +11,20 @@ function Footer() {
       <CssBaseline />
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-          <img
-            src={logo}
-            style={{ maxWidth: "50px", marginBottom: "2vh", marginTop: "1vh" }}
-            alt="logo img"
-          />
+          <Link
+            to="/home"
+            style={{
+              textDecoration: "none",
+              color: "#4371B5",
+            }}
+          >
+            <Typography
+              variant="h3"
+              sx={{ fontFamily: "Quicksand", fontWeight: "700" }}
+            >
+              Pic Picker
+            </Typography>
+          </Link>
           <Box>
             <InstagramIcon
               sx={{ color: "#38393C" }}

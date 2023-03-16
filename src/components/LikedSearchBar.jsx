@@ -16,6 +16,8 @@ import { useState } from "react";
 
 function LikedSearchBar() {
   const [userInput, setUserInput] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState("");
+  console.log(`esto es el estado del filtro selectedFilter`);
 
   const dispatch = useDispatch();
 
@@ -29,6 +31,7 @@ function LikedSearchBar() {
   const handleFilterChange = (e) => {
     const filterBy = e.target.value;
     dispatch(findPicBy(filterBy));
+    setSelectedFilter(e.target.value);
   };
 
   return (
@@ -39,7 +42,7 @@ function LikedSearchBar() {
         justifyContent: "space-between",
       }}
     >
-      <Grid container alignContent="center" justifyContent="center" spacing={1}>
+      <Grid container alignContent="center" justifyContent="center" spacing={2}>
         <Grid item xs={4}>
           <TextField
             className="inputRounded"
@@ -61,7 +64,7 @@ function LikedSearchBar() {
           />
         </Grid>
         <Grid item></Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <Box
             sx={{
               backgroundColor: "white",
@@ -75,10 +78,9 @@ function LikedSearchBar() {
                 labelId="filterId"
                 id="filterId"
                 label="filter"
-                value="none"
+                value={selectedFilter}
                 onChange={handleFilterChange}
               >
-                <MenuItem value="none"></MenuItem>
                 <MenuItem value="width">Width</MenuItem>
                 <MenuItem value="height">Height</MenuItem>
                 <MenuItem value="likes">Likes</MenuItem>

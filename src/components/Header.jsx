@@ -1,5 +1,4 @@
-import logo from "../img/logo.jpg";
-import { AppBar, Box, CssBaseline, Toolbar } from "@mui/material";
+import { AppBar, Box, CssBaseline, Toolbar, Typography } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useState } from "react";
@@ -17,16 +16,19 @@ function Header() {
       <CssBaseline />
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-          <Link to="/">
-            <img
-              src={logo}
-              style={{
-                maxWidth: "50px",
-                marginBottom: "2vh",
-                marginTop: "1vh",
-              }}
-              alt="logo img"
-            />
+          <Link
+            to="/home"
+            style={{
+              textDecoration: "none",
+              color: "#4371B5",
+            }}
+          >
+            <Typography
+              variant="h3"
+              sx={{ fontFamily: "Quicksand", fontWeight: "700" }}
+            >
+              Pic Picker
+            </Typography>
           </Link>
           <Box
             sx={{
