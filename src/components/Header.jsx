@@ -17,7 +17,7 @@ function Header() {
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
           <Link
-            to="/home"
+            to="/pic-picker/"
             style={{
               textDecoration: "none",
               color: "#4371B5",
@@ -47,14 +47,17 @@ function Header() {
               }}
             >
               {liked ? (
-                <Link to="/home" style={{ textDecoration: "none" }}>
+                <Link to="/pic-picker/" style={{ textDecoration: "none" }}>
                   <FavoriteIcon
                     sx={{ color: "red", marginTop: "7px" }}
                     fontSize="large"
                   />
                 </Link>
               ) : (
-                <Link to="/favorites" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/pic-picker/favorites"
+                  style={{ textDecoration: "none" }}
+                >
                   <FavoriteBorderIcon
                     fontSize="large"
                     sx={{ color: "black", marginTop: "7px" }}
