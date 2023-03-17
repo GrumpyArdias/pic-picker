@@ -12,7 +12,7 @@ function Footer() {
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
           <Link
-            to="/home"
+            to="/"
             style={{
               textDecoration: "none",
               color: "#4371B5",

@@ -47,7 +47,7 @@ function Header() {
               }}
             >
               {liked ? (
-                <Link to="/home" style={{ textDecoration: "none" }}>
+                <Link to="/" style={{ textDecoration: "none" }}>
                   <FavoriteIcon
                     sx={{ color: "red", marginTop: "7px" }}
                     fontSize="large"
