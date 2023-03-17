@@ -90,7 +90,7 @@ const LikedSlice = createSlice({
           state.list = state.list.sort((a, b) => b.width - a.width);
           break;
         default:
-          state.list = JSON.parse(localStorage.getItem("myFavorites"));
+          state.list = JSON.parse(localStorage.getItem("LikedItem"));
           break;
       }
     },
