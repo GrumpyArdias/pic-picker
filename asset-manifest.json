@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pic-picker/static/css/main.301f6365.css",
+    "main.js": "/pic-picker/static/js/main.78ec116c.js",
+    "index.html": "/pic-picker/index.html",
+    "main.301f6365.css.map": "/pic-picker/static/css/main.301f6365.css.map",
+    "main.78ec116c.js.map": "/pic-picker/static/js/main.78ec116c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.301f6365.css",
+    "static/js/main.78ec116c.js"
+  ]
+}
