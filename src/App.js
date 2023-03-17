@@ -13,7 +13,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/favorites" element={<Favorite />} />
           </Routes>
         </main>
